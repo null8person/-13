@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  min-height: 100%;
+}
+
+header h6 {
+  margin-left: 20px !important;
+}
+
+.wrapper {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.wrapper-vertical {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
+:root {
+  --primary: #ffd54f;
+  --dark-bg: #222629;
+  --fc-border-color: #ffd64f8a;
+  --high-emphasis: #ffffffde;
+  --medium-emphasis: #ffffff99;
+  --disabled-emphasis: #ffffff38;
+  --dark-high-emphasis: #000000de;
+  --fc-page-bg-color: #ef6c00;
+  --fc-today-bg-color: #b3d6899c;
+  --fc-button-bg-color: transparent;
+  --fc-button-active-bg-color: var(--primary);
+  --fc-button-border-color: var(--primary);
+  --fc-button-active-border-color: var(--primary);
+  --fc-button-hover-bg-color: var(--fc-border-color);
+  --fc-button-hover-border-color: var(--primary);
+  --fc-neutral-bg-color: var(--fc-today-bg-color);
+}
+
+* {
+  --scrollbarBG: var(--dark-bg);
+  --thumbBG: var(--primary);
+}
+*::-webkit-scrollbar {
+  width: 1em;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+*::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--fc-border-color);
+  border-radius: 1em;
+  border: 3px solid var(--scrollbarBG);
+}
